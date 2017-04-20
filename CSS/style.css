@@ -1,0 +1,213 @@
+@font-face{
+  font-family:'PlayfairDisplay';
+  src:url(../Assets/fonts/PlayfairDisplay-Regular.otf);
+  font-weight:normal;
+  font-style:normal;
+}
+
+@font-face{
+  font-family:'PlayfairDisplay';
+  src:url(../Assets/fonts/PlayfairDisplay-Bold.otf);
+  font-weight:bold;
+  font-style:normal;
+}
+
+@font-face{
+  font-family:'PlayfairDisplay';
+  src:url(../Assets/fonts/PlayfairDisplay-Italic.otf);
+  font-weight:normal;
+  font-style:italic;
+}
+
+@font-face{
+  font-family:'PlayfairDisplay';
+  src:url(../Assets/fonts/PlayfairDisplay-BoldItalic.otf);
+  font-weight:bold;
+  font-style:italic;
+}
+
+@font-face{
+  font-family:'Raleway';
+  src:url(../Assets/fonts/Raleway-Light.otf);
+  font-weight:normal;
+  font-style:normal;
+}
+
+@font-face{
+  font-family:'Raleway';
+  src:url(../Assets/fonts/Raleway-LightItalic.otf);
+  font-weight:normal;
+  font-style:Italic;
+}
+
+@font-face{
+  font-family:'Raleway';
+  src:url(../Assets/fonts/Raleway-Medium.otf);
+  font-weight:bold;
+  font-style:normal;
+}
+
+@font-face{
+  font-family:'Raleway';
+  src:url(../Assets/fonts/Raleway-MediumItalic.otf);
+  font-weight:bold;
+  font-style:italic;
+}
+
+body{
+  margin: 0px auto;
+  font-family:'Raleway',sans-serif;
+}
+
+header{
+  height:125px;
+  width:1240px;
+  display:flex;
+  justify-content:space-between;
+}
+
+#aloha{
+  width:200px;
+  height:125px;
+  padding:0 1em;
+}
+
+#cart{
+  width:100px;
+  height:125px;
+}
+
+header img, header nav{
+  display: inline-block;
+}
+header nav{
+  font-size:20px;
+  bottom:0px;
+  left:300px;
+  height:125px;
+}
+
+nav ul{
+  padding-left:0px;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+nav li {
+  display: inline;
+  color:#e2574c;
+  padding:0 0.5em;
+}
+
+.container{
+  width:1240px;
+  margin:0px;
+}
+
+.herobanner{
+  background-image:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), 
+  url(../Assets/images/banner-girl.png),
+  url(../Assets/images/flower-bkgd.jpg);
+  background-size:auto,30%,cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-attachment:scroll;
+  height:800px;
+  width:1240px;
+  text-align: center;
+}
+
+h6{
+  font-size:24px;
+}
+
+h2{
+  font-size:56px;
+}
+
+.update h3,.update p{
+  color:#FFFAF0;
+}
+
+.update h3{
+  padding-top:70px;
+}
+
+.update{
+  background-image:url(../Assets/images/wave-bkgd.jpg);
+  background-repeat:no-repeat;
+  padding:200px,25%,50px,25%;
+  background-position:bottom;
+  background-size:cover;
+  height:300px;
+  text-align: center;
+}
+
+.handicap{
+  text-align: center;
+}
+
+.handicap h3{
+  font-family:'PlayfairDisplay',serif;
+}
+
+.category a{
+  text-decoration:none;
+}
+
+.container h3{
+  font-family:'PlayfairDisplay',serif;
+}
+
+.herobanner h6,h2{
+  font-family:'PlayfairDisplay',serif;
+  color:#FFFAF0;
+  position:relative;
+  Top:400px;
+}
+
+.selection h3{
+  font-family:'PlayfairDisplay',serif;
+}
+
+.selection h5{
+  color:#e2574c;
+}
+
+.container.wrapper{
+  display:flex;
+  justify-content:space-between;
+}
+
+.info{
+  width:300px;
+  height:200px;
+  padding:50px 0 0 50px;
+}
+
+.socialmedia{
+  width:150px;
+  height:200px;
+  padding:50px 50px 0 0;
+}
+
+.socialmedia ul{
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
+footer{
+  height:300px;
+  width:1240px;
+  background-color:#000000;
+  background-size:cover;
+  opacity:0.9;
+}
+
+.info p,.info a{
+  color:#FFFAF0;
+}
+
+.address p{
+  color:#696969;
+}
+

@@ -1,55 +1,55 @@
 @font-face{
   font-family:'PlayfairDisplay';
-  src:url(../Assets/fonts/PlayfairDisplay-Regular.otf);
+  src:url(../fonts/PlayfairDisplay-Regular.otf);
   font-weight:normal;
   font-style:normal;
 }
 
 @font-face{
   font-family:'PlayfairDisplay';
-  src:url(../Assets/fonts/PlayfairDisplay-Bold.otf);
+  src:url(../fonts/PlayfairDisplay-Bold.otf);
   font-weight:bold;
   font-style:normal;
 }
 
 @font-face{
   font-family:'PlayfairDisplay';
-  src:url(../Assets/fonts/PlayfairDisplay-Italic.otf);
+  src:url(../fonts/PlayfairDisplay-Italic.otf);
   font-weight:normal;
   font-style:italic;
 }
 
 @font-face{
   font-family:'PlayfairDisplay';
-  src:url(../Assets/fonts/PlayfairDisplay-BoldItalic.otf);
+  src:url(../fonts/PlayfairDisplay-BoldItalic.otf);
   font-weight:bold;
   font-style:italic;
 }
 
 @font-face{
   font-family:'Raleway';
-  src:url(../Assets/fonts/Raleway-Light.otf);
+  src:url(../fonts/Raleway-Light.otf);
   font-weight:normal;
   font-style:normal;
 }
 
 @font-face{
   font-family:'Raleway';
-  src:url(../Assets/fonts/Raleway-LightItalic.otf);
+  src:url(../fonts/Raleway-LightItalic.otf);
   font-weight:normal;
   font-style:Italic;
 }
 
 @font-face{
   font-family:'Raleway';
-  src:url(../Assets/fonts/Raleway-Medium.otf);
+  src:url(../fonts/Raleway-Medium.otf);
   font-weight:bold;
   font-style:normal;
 }
 
 @font-face{
   font-family:'Raleway';
-  src:url(../Assets/fonts/Raleway-MediumItalic.otf);
+  src:url(../fonts/Raleway-MediumItalic.otf);
   font-weight:bold;
   font-style:italic;
 }
@@ -96,6 +96,7 @@ nav li {
   display: inline;
   color:#e2574c;
   padding:0 0.5em;
+  text-transform:uppercase;
 }
 
 .container{
@@ -105,8 +106,8 @@ nav li {
 
 .herobanner{
   background-image:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), 
-  url(../Assets/images/banner-girl.png),
-  url(../Assets/images/flower-bkgd.jpg);
+  url(../images/banner-girl.png),
+  url(../images/flower-bkgd.jpg);
   background-size:auto,30%,cover;
   background-position:center;
   background-repeat:no-repeat;
@@ -118,6 +119,7 @@ nav li {
 
 h6{
   font-size:24px;
+  text-transform:uppercase;
 }
 
 h2{
@@ -133,7 +135,7 @@ h2{
 }
 
 .update{
-  background-image:url(../Assets/images/wave-bkgd.jpg);
+  background-image:url(../images/wave-bkgd.jpg);
   background-repeat:no-repeat;
   padding:200px,25%,50px,25%;
   background-position:bottom;
@@ -154,6 +156,10 @@ h2{
   text-decoration:none;
 }
 
+.category li{
+  text-transform:uppercase;
+}
+
 .container h3{
   font-family:'PlayfairDisplay',serif;
 }
@@ -171,6 +177,10 @@ h2{
 
 .selection h5{
   color:#e2574c;
+}
+
+.selection p{
+  text-transform:uppercase;
 }
 
 .container.wrapper{

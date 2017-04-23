@@ -1,3 +1,6 @@
+/* ----------------------Types of font------------------------------*/
+/*Add more default fonts from FontSquirrel for other website*/
+
 @font-face{
   font-family:'PlayfairDisplay';
   src:url(../fonts/PlayfairDisplay-Regular.otf);
@@ -59,11 +62,14 @@ body{
   font-family:'Raleway',sans-serif;
 }
 
+/*-------------------------header-------------------------------*/
+
 header{
   height:125px;
-  width:1240px;
-  display:flex;
+  display:flex;;
+  flex-wrap:wrap;
   justify-content:space-between;
+  align-content:center;
 }
 
 #aloha{
@@ -74,57 +80,258 @@ header{
 
 #cart{
   width:100px;
-  height:125px;
+  height:80px;
+  padding-top:20px;
 }
 
 header img, header nav{
   display: inline-block;
 }
-header nav{
-  font-size:20px;
-  bottom:0px;
-  left:300px;
-  height:125px;
+
+nav{
+  padding-top:20px;
+  padding-bottom:20px;
+  margin-left:10px;
+  margin-right:10px;
+  border-top: 1px solid black;
 }
+
 
 nav ul{
   padding-left:0px;
-  margin-top:50px;
-  margin-bottom:50px;
+  display:flex;
+  justify-content:space-around;
+  margin: 0;
 }
 nav li {
   display: inline;
   color:#e2574c;
-  padding:0 0.5em;
+  padding:0 1em;
   text-transform:uppercase;
+  font-size:24px;
+  font-weight:bold;
 }
 
+/*--------------------------herobanner----------------------------*/
+
 .container{
-  width:1240px;
-  margin:0px;
+  width:100%;
+  margin:0px auto;
 }
 
 .herobanner{
-  background-image:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), 
+  background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), 
   url(../images/banner-girl.png),
   url(../images/flower-bkgd.jpg);
   background-size:auto,30%,cover;
-  background-position:center;
+  background-position:bottom;
   background-repeat:no-repeat;
   background-attachment:scroll;
-  height:800px;
-  width:1240px;
+  height:700px;
   text-align: center;
+}
+
+.herobanner h6,h2{
+  font-family:'PlayfairDisplay',serif;
+  color:#FFFAF0;
+  position:relative;
+  Top:250px;
 }
 
 h6{
   font-size:24px;
   text-transform:uppercase;
+  margin-top:40px;
+  margin-bottom:40px;
 }
 
 h2{
   font-size:56px;
 }
+
+/*------------------------About Aloha--------------------------*/
+
+.handicap{
+  text-align: center;
+}
+
+.handicap h1{
+  font-family:'PlayfairDisplay',serif;
+  margin-bottom:50px;
+  margin-top:80px;
+}
+
+.handicap p{
+  font-family:'Raleway',sans-serif;
+  margin-bottom:50px;
+  line-height:1.5em;
+}
+
+.container h3{
+  font-family:'PlayfairDisplay',serif;
+}
+
+/*----------------------Category of products---------------------*/
+
+.category a{
+  text-decoration:none;
+}
+
+.category li{
+  text-transform:uppercase;
+}
+
+ul.choice{
+  list-style-type:none;
+}
+
+.choice{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:space-between; 
+  padding-left:0px;
+}
+
+.men{
+  background-image: url(../images/mens-category.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  height:300px;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  /*display:block;*/
+}
+
+.men a{
+  font-family:'PlayfairDisplay',serif;
+  color:#FFFAF0;
+  text-align:center;
+  font-size:32px;
+}
+
+.trends{
+  background-image:url(../images/trends-category.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  text-align:center;
+  height:300px;
+  width:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  /*display:block;*/
+}
+
+.trends a{
+  font-family:'PlayfairDisplay',serif;
+  color:#FFFAF0;
+  font-size:32px;
+}
+
+.glasses{
+  background-image:url(../images/glasses-category.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  text-align:center;
+  height:300px;
+  width:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  /*display:block;*/
+}
+
+.glasses a{
+  font-family:'PlayfairDisplay',serif;
+  color:#FFFAF0;
+  text-align:center;
+  font-size:32px;
+}
+
+.sale{
+  background-image:url(../images/sale-category.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  text-align:center;
+  height:300px;
+  width:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+ /*display:block;*/
+}
+
+.sale a{
+  font-family:'PlayfairDisplay',serif;
+  color:#FFFAF0;
+  text-align:center;
+  font-size:32px;
+}
+
+.bags{
+  background-image:url(../images/bags-category.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:bottom;
+  text-align:center;
+  height:300px;
+  width:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  /*display:block;*/
+}
+
+.bags a{
+  font-family:'PlayfairDisplay',serif;
+  color:#FFFAF0;
+  text-align:center;
+  font-size:32px;
+}
+
+.women{
+  background-image:url(../images/womens-category.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:top;
+  text-align:center;
+  height:300px;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  /*display:block;*/
+}
+
+.women a{
+  font-family:'PlayfairDisplay',serif;
+  color:#FFFAF0;
+  text-align:center;
+  font-size:32px;
+}
+
+/*-------------------Most Loved Products---------------------*/
+
+.selection h3{
+  font-family:'PlayfairDisplay',serif;
+}
+
+.selection h5{
+  color:#e2574c;
+}
+
+.selection p{
+  text-transform:uppercase;
+}
+
+/*---------------Updates from the company------------------*/
 
 .update h3,.update p{
   color:#FFFAF0;
@@ -144,70 +351,51 @@ h2{
   text-align: center;
 }
 
-.handicap{
-  text-align: center;
-}
-
-.handicap h3{
-  font-family:'PlayfairDisplay',serif;
-}
-
-.category a{
-  text-decoration:none;
-}
-
-.category li{
-  text-transform:uppercase;
-}
-
-.container h3{
-  font-family:'PlayfairDisplay',serif;
-}
-
-.herobanner h6,h2{
-  font-family:'PlayfairDisplay',serif;
-  color:#FFFAF0;
-  position:relative;
-  Top:400px;
-}
-
-.selection h3{
-  font-family:'PlayfairDisplay',serif;
-}
-
-.selection h5{
-  color:#e2574c;
-}
-
-.selection p{
-  text-transform:uppercase;
-}
+/*------------------------footer--------------------------*/
 
 .container.wrapper{
   display:flex;
-  justify-content:space-between;
+  flex-direction:column;
+  flex-wrap:wrap;
+  /*justify-content:space-between;*/
 }
+/*.info, .socialmedia{
+  display:block;
+}*/
 
 .info{
   width:300px;
-  height:200px;
-  padding:50px 0 0 50px;
+  height:150px;
+  padding:30px 20px 20px 20px ;
+  position:relative;
+  left:250px;
 }
 
 .socialmedia{
-  width:150px;
+  width:300px;
   height:200px;
-  padding:50px 50px 0 0;
+  padding:0 50px 0 0;
+  position:relative;
+  left:250px;
 }
 
 .socialmedia ul{
-  margin-top:50px;
+  /*margin-top:50px;*/
   margin-bottom:50px;
+  /*display:block;*/
+}
+
+.socialmedia li{
+  display:inline-block;
+  padding:0 1em;
+}
+
+.socialmedia i{
+  color:#FFFAF0;
 }
 
 footer{
-  height:300px;
-  width:1240px;
+  height:350px;
   background-color:#000000;
   background-size:cover;
   opacity:0.9;

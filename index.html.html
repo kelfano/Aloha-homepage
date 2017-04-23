@@ -1,68 +1,75 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <!--Add viewport-->
+    <script src="https://use.fontawesome.com/ad83c2aacb.js"></script>
     <title>Kelvin_Lau_Project1</title>
+    <link rel="stylesheet" href="CSS/resets.css">
     <link rel="stylesheet" href="lib/flickity/flickity.min.css">
     <link rel="stylesheet" href="CSS/style.css">
   </head>
   <body>
     <header>
-      <img id="aloha" src="images/aloha-logo.svg" >
-      <nav>
-        <ul>
-          <li>about</li>
-          <li>shop</li>
-          <li>featured</li>
-          <li>updates</li>
-        </ul>
-      </nav>
-      <img id="cart" src="images/cart-icon.svg" >
+      <img id="aloha" src="images/aloha-logo.svg" alt ="aloha-icon">
+      <img id="cart" src="images/cart-icon.svg" alt ="cart-icon" >
     </header>
+    
+    <nav>
+      <ul>
+        <li>about</li>
+        <li>shop</li>
+        <li>featured</li>
+        <li>updates</li>
+      </ul>
+    </nav>
+  
+    
     <div class= "container">
       <div class="herobanner">
         <h6>new collection</h6>
-        <h2>Spring Summer 2016</h2>
+        <h2>Spring/Summer <br> 2016</h2>
       </div>    
     </div>  
     <div class="container">
       <div class="handicap">
-       <h3>Hand-Crafted Styles</h3>
-        <p>Aloha Apparel sells only the finest ready-to-travel clothing. Browse our  <br> current selection products or sign-up for updates below. </p> 
+        <h1>Hand-Crafted Styles </h1>
+        <p>Aloha Apparel Co. sells only the finest ready-to-<br> travel clothing. Browse our  current selection of <br> products or sign-up for updates below. </p> 
       </div>
     </div>
       <div class="category">
-        <ul>
-          <li> <a href="#">men's</a></li>
-          <li><a href="#">trends</a></li>
-          <li><a href="#">glasses</a></li>
-          <li><a href="#">sale</a></li>
-          <li><a href="#">bags</a></li>
-          <li><a href="#">women's</a></li>
+        <ul class="choice">
+          <li class="men"> <a href="#">men's</a> </li>
+          <li class="trends"><a href="#">trends</a></li>
+          <li class="glasses"><a href="#">glasses</a></li>
+          <li class="sale"><a href="#">sale</a></li>
+          <li class="bags"><a href="#">bags</a></li>
+          <li class="women"><a href="#">women's</a></li>
         </ul>
       </div>
       <div class="selection">
         <h3>Most-Loved Products</h3>
         <ul>
           <li>
-            <img src="images/checked-stretch-dress.jpg">
+            <img src="images/checked-stretch-dress.jpg" alt ="checked-stretch-dress">
             <p>dresses</p>
             <h5>Checked Stretch Dress</h5>
             <p>$129.00</p>
           </li>
           <li>
-            <img src="images/blue-hipster-backpack.jpg">
+            <img src="images/blue-hipster-backpack.jpg" alt ="blue-hipster-backpack">
             <p>bag</p>
             <h5>Blue Hipster Backpack</h5>
             <p>$69.0</p>
           </li>
           <li>
-            <img src="images/demin-overall-shorts.jpg">
+            <img src="images/demin-overall-shorts.jpg" alt ="demin-overall-shorts">
             <p>demin</p>
             <h5>DEMIN Overall Shirts</h5>
             <p>$89.00</p>
           </li>
           <li>
-            <img src="images/pink-dotted-dress.jpg">
+            <img src="images/pink-dotted-dress.jpg" alt ="pink-dotted-dress">
             <p>dresses</p>
             <h5>Pink Dotted Dress</h5>
             <p>$99.0</p>
@@ -73,8 +80,8 @@
         <div class="update">
           <h3>Sign up for updates</h3>
           <p>Stay updated on our latest product releases, be first to find out about <br> upcoming sales, and get free style tips from our blog. Unsubscribe at any time</p>
-          <input type="text">
-          <button>Subscribe</button>
+          <input type="text">     <!-- missing form elements-->
+          <button>Subscribe</button>  <!-- missing form elements-->
         </div>
       </div>
     <footer>
@@ -94,11 +101,10 @@
         </div>
          <div class="socialmedia">
             <ul>
-              <li><a href="#">Facebook </a></li>   
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">Pinterest</a></li>
-              <li><a href="#">Google </a></li>
+              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> </a></li> <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i> </a></li>
           </ul>
           </div>
         </div>

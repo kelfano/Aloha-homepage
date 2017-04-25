@@ -1,118 +1,143 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, inital-scale= 1.0">
-    <script src="https://use.fontawesome.com/ad83c2aacb.js"></script>
-    <title>Kelvin_Lau_Project1</title>
-    <link rel="stylesheet" href="CSS/resets.css">
-    <link rel="stylesheet" href="lib/flickity/flickity.min.css">
-    <link rel="stylesheet" href="CSS/style.css">
-  </head>
-  <body>
-    <header>
-      <img id="aloha" src="images/aloha-logo.svg" alt ="aloha-icon">
-      <img id="cart" src="images/cart-icon.svg" alt ="cart-icon" >
-    </header>
-    
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, inital-scale= 1.0">
+  <script src="https://use.fontawesome.com/ad83c2aacb.js"></script>
+  <title>Kelvin_Lau_Project1</title>
+  <link rel="stylesheet" href="CSS/resets.css">
+  <link rel="stylesheet" href="lib/flickity/flickity.min.css">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+  <header>
+    <img id="aloha" src="images/aloha-logo.svg" alt="aloha-icon">
+    <img id="cart" src="images/cart-icon.svg" alt="cart-icon">
     <nav>
       <ul>
-        <li>about</li>
-        <li>shop</li>
-        <li>featured</li>
-        <li>updates</li>
+        <li> <a href="#about">about </a></li>
+        <li> <a href="#shop">shop </a></li>
+        <li> <a href="#featured">featured </a></li>
+        <li><a href="#updates">updates </a></li>
       </ul>
     </nav>
-  
-    
-    <div class= "container">
-      <div class="herobanner">
-        <h6>new collection</h6>
-        <h2>Spring/Summer <br> 2016</h2>
-      </div>    
-    </div>  
+  </header>
+  <div class="container">
+    <div class="herobanner">
+      <h6>new collection</h6>
+      <h2>Spring/Summer <br> 2016</h2>
+    </div>
+  </div>
+  <div class="container">
+    <div class="handicap">
+      <h1 id="about"> <i>Hand-Crafted</i> <b>Styles</b> </h1>
+      <p>Aloha Apparel Co. sells only the finest ready-to-<br> travel clothing. Browse our current selection of <br> products
+        or sign-up for updates below. </p>
+    </div>
+  </div>
+  <div class="category">
+    <ul class="choice">
+      <li class="men" id="shop"> <a href="#">men's</a> </li>
+      <li class="trends"><a href="#">trends</a></li>
+      <li class="glasses"><a href="#">glasses</a></li>
+      <li class="sale"><a href="#">sale</a></li>
+      <li class="bags"><a href="#">bags</a></li>
+      <li class="women"><a href="#">women's</a></li>
+    </ul>
+  </div>
+  <div class="selection" id="featured">
+    <h3> <i>Most-Loved</i> <b>Products</b></h3>
+      <ul class="carousel">
+        <li class="gallery-cell">
+          <img src="images/stretch-knit-dress.jpg" alt="Stretch knit Dress">
+          <p>dresses</p>
+          <h5>Stretch knit Dress</h5>
+          <p>$169.00</p>
+        </li>
+        <li class="gallery-cell">
+          <img src="images/cotton-blue-shirt.jpg" alt="Cotton Blue Shirt">
+          <p>shirts</p>
+          <h5>Cotton Blue Shirt</h5>
+          <p>$89.0</p>
+        </li>
+        <li class="gallery-cell">
+          <img src="images/checked-stretch-dress.jpg" alt="checked-stretch-dress">
+          <p>dresses</p>
+          <h5>Checked Stretch Dress</h5>
+          <p>$129.00</p>
+        </li>
+        <li class="gallery-cell">
+          <img src="images/blue-hipster-backpack.jpg" alt="blue-hipster-backpack">
+          <p>bag</p>
+          <h5>Blue Hipster Backpack</h5>
+          <p>$69.0</p>
+        </li>
+        <li class="gallery-cell">
+          <img src="images/demin-overall-shorts.jpg" alt="demin-overall-shorts">
+          <p>demin</p>
+          <h5>DEMIN Overall Shirts</h5>
+          <p>$89.00</p>
+        </li>
+        <li class="gallery-cell">
+          <img src="images/pink-dotted-dress.jpg" alt="pink-dotted-dress">
+          <p>dresses</p>
+          <h5>Pink Dotted Dress</h5>
+          <p>$99.0</p>
+        </li>
+        <li class="gallery-cell">
+          <img src="images/blue-silk-dress.jpg" alt="Blue Silk Dress">
+          <p>dresses</p>
+          <h5>Blue Silk Dress</h5>
+          <p>$119.00</p>
+        </li>
+        <li class="gallery-cell">
+          <img src="images/cotton-yellow-tshirt.jpg" alt="Cotton Yellow Tshirt">
+          <p>Shirts</p>
+          <h5>Cotton Yellow Tshirt</h5>
+          <p>$39.0</p>
+        </li>
+      </ul>
+    </div>
     <div class="container">
-      <div class="handicap">
-        <h1> <i>Hand-Crafted</i> <b>Styles</b> </h1>
-        <p>Aloha Apparel Co. sells only the finest ready-to-<br> travel clothing. Browse our  current selection of <br> products or sign-up for updates below. </p> 
+      <div class="update" id="updates">
+        <h3>Sign-up for updates</h3>
+        <p>Stay updated on our latest product releases, be first <br> to find out about upcoming sales, and get free style <br>  tips from our blog. Unsubscribe at any time</p>
+        <form>
+          <input type="email" name="email-address">
+          <button type="submit">Subscribe</button>
+        </form>
       </div>
     </div>
-      <div class="category">
-        <ul class="choice">
-          <li class="men"> <a href="#">men's</a> </li>
-          <li class="trends"><a href="#">trends</a></li>
-          <li class="glasses"><a href="#">glasses</a></li>
-          <li class="sale"><a href="#">sale</a></li>
-          <li class="bags"><a href="#">bags</a></li>
-          <li class="women"><a href="#">women's</a></li>
-        </ul>
-      </div>
-      <div class="selection">
-        <h3> <i>Most-Loved</i> <b>Products</b></h3>
-        <ul>
-          <li>
-            <img src="images/checked-stretch-dress.jpg" alt ="checked-stretch-dress">
-            <p>dresses</p>
-            <h5>Checked Stretch Dress</h5>
-            <p>$129.00</p>
-          </li>
-          <li>
-            <img src="images/blue-hipster-backpack.jpg" alt ="blue-hipster-backpack">
-            <p>bag</p>
-            <h5>Blue Hipster Backpack</h5>
-            <p>$69.0</p>
-          </li>
-          <li>
-            <img src="images/demin-overall-shorts.jpg" alt ="demin-overall-shorts">
-            <p>demin</p>
-            <h5>DEMIN Overall Shirts</h5>
-            <p>$89.00</p>
-          </li>
-          <li>
-            <img src="images/pink-dotted-dress.jpg" alt ="pink-dotted-dress">
-            <p>dresses</p>
-            <h5>Pink Dotted Dress</h5>
-            <p>$99.0</p>
-          </li>
-        </ul>
-      </div>
-      <div class="container">
-        <div class="update">
-          <h3>Sign up for updates</h3>
-          <p>Stay updated on our latest product releases, be first to find out about <br> upcoming sales, and get free style tips from our blog. Unsubscribe at any time</p>
-          <input type="text">     <!-- missing form elements-->
-          <button>Subscribe</button>  <!-- missing form elements-->
-        </div>
-      </div>
     <footer>
       <div class="container">
         <div class="container wrapper">
-         <div class="info">
-            <p>&copy; 2016 Aloha Appael Co. 
+          <div class="info">
+            <p>&copy; 2016 Aloha Appael Co.
               <br> Powered by HTML and CSS </p>
-            <p>604-604-6040. 
-              <a href="#">info@alohaapparel.com </a> 
+            <p>604-604-6040. <a href="#">info@alohaapparel.com </a>
             </p>
-          <div class="address">
-              <p>1490 W Broadway <br>
-               Vancouver,BC,Canada 
+            <div class="address">
+              <p>1490 W Broadway <br> Vancouver,BC,Canada
               </p>
+            </div>
           </div>
-        </div>
-         <div class="socialmedia">
+          <div class="socialmedia">
             <ul>
-              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> </a></li> <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> </a></li>
+              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
               <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
               <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
               <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i> </a></li>
-          </ul>
+            </ul>
           </div>
         </div>
       </div>
     </footer>
     <script src="lib/jquery-3.2.1.min.js"></script>
     <script src="lib/flickity/flickity.pkgd.min.js"></script>
-    <script src="js/main.js"></script>    
-  </body>
+    <script src="js/main.js"></script>
+</body>
 
 </html>

@@ -1,5 +1,4 @@
 /* ----------------------Types of font------------------------------*/
-/*Add more default fonts from FontSquirrel for other website*/
 
 @font-face{
   font-family:'PlayfairDisplay';
@@ -58,6 +57,7 @@
 }
 
 body{
+  width:100%;
   margin: 0px auto;
   font-family:'Raleway',sans-serif;
 }
@@ -75,14 +75,12 @@ header{
   width:200px;
   height:125px;
   padding:0 1em;
-  /*order:1;*/    
 }
 
 #cart{
   width:100px;
   height:80px;
   padding-top:30px;
-  /*order:2;*/
 }
 
 header img, header nav{
@@ -90,7 +88,6 @@ header img, header nav{
 }
 
 nav{
-  /*order:3;*/
   padding:20px 0;
   margin-left:10px;
   margin-right:10px;
@@ -120,11 +117,6 @@ nav a{
 }
 
 /*--------------------------herobanner----------------------------*/
-
-.container{
-  width:100%;
-  margin:0px auto;
-}
 
 .herobanner{
   background:
@@ -178,7 +170,7 @@ h2{
   line-height:2em;
 }
 
-.container h3{
+.update h3{
   font-family:'PlayfairDisplay',serif;
 }
 
@@ -192,7 +184,7 @@ h2{
   text-transform:uppercase;
 }
 
-ul.choice{
+.choice ul{
   list-style-type:none;
 }
 
@@ -215,7 +207,6 @@ ul.choice{
   justify-content:center;
   align-items:center;
   margin-bottom:15px; 
-  /*display:block;*/
 }
 
 .men a{
@@ -237,7 +228,6 @@ ul.choice{
   justify-content:center;
   align-items:center;
   margin-bottom:15px;
-  /*display:block;*/
 }
 
 .trends a{
@@ -258,7 +248,6 @@ ul.choice{
   justify-content:center;
   align-items:center;
   margin-bottom:15px;
-  /*display:block;*/
 }
 
 .glasses a{
@@ -280,7 +269,6 @@ ul.choice{
   justify-content:center;
   align-items:center;
   margin-bottom:15px;
- /*display:block;*/
 }
 
 .sale a{
@@ -302,7 +290,6 @@ ul.choice{
   justify-content:center;
   align-items:center;
   margin-bottom:15px;
-  /*display:block;*/
 }
 
 .bags a{
@@ -324,7 +311,6 @@ ul.choice{
   justify-content:center;
   align-items:center;
   margin-bottom:15px;
-  /*display:block;*/
 }
 
 .women a{
@@ -363,7 +349,6 @@ ul.choice{
 }
 
 .gallery-cell{
-  /*width:80%;*/
   height:30rem;
 
 }
@@ -398,15 +383,12 @@ ul.choice{
 
 /*------------------------footer--------------------------*/
 
-.container.wrapper{
+.container wrapper{
   display:flex;
   flex-direction:column;
   flex-wrap:wrap;
-  /*justify-content:space-between;*/
 }
-/*.info, .socialmedia{
-  display:block;
-}*/
+
 
 .info{
   width:20rem;
@@ -416,6 +398,10 @@ ul.choice{
 .socialmedia{
   width:20rem;
   padding:0 3.5rem 0 3.5rem;
+}
+
+.socialmedia span{
+  display:none;
 }
 
 
@@ -443,8 +429,133 @@ footer{
 }
 
 .address p{
-  color:#696969;
+  color:#242424;
   margin-top:1rem;
   padding-left:1.5rem;
 }
 
+/*--------------------Desktop Version-------------------------*/
+@media screen and (min-width:1240px){
+
+header {
+  align-items:center;
+}
+
+#cart{
+  order:2;
+}
+
+nav{
+  border-top:none;
+  width:50%;
+}
+
+.men, .women{
+  width:49%;
+}
+
+.trends, .glasses, .sale, .bags{
+  width:25%;
+}
+
+.container wrapper{
+  visibility:hidden; 
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+}
+
+.container {
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+}
+
+
+.socialmedia{
+  padding-left:20rem;
+  margin-left:15rem;
+}
+
+.socialmedia span{
+  display:inline;
+}
+
+.socialmedia ul{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.socialmedia li{
+  margin-bottom: 1rem;
+}
+.socialmedia a{
+  color:#FFFAF0;
+}
+
+
+}
+
+/*--------------------Tablet Version-------------------------*/
+@media screen and (min-width:600px){
+
+header {
+  align-items:center;
+}
+
+#cart{
+  order:2;
+}
+
+nav{
+  border-top:none;
+  width:40%;
+}
+
+.men, .women{
+  width:49%;
+}
+
+.trends, .glasses, .sale, .bags{
+  width:25%;
+}
+
+.container wrapper{
+  visibility:hidden; 
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+}
+
+.container {
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+}
+
+
+.socialmedia{
+  padding-left:20rem;
+  margin-left:15rem;
+}
+
+.socialmedia span{
+  display:inline;
+}
+
+.socialmedia ul{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.socialmedia li{
+  margin-bottom: 1rem;
+}
+.socialmedia a{
+  color:#FFFAF0;
+}
+
+
+}

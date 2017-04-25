@@ -65,23 +65,24 @@ body{
 /*-------------------------header-------------------------------*/
 
 header{
-  height:125px;
   display:flex;;
   flex-wrap:wrap;
   justify-content:space-between;
   align-content:center;
 }
 
-#aloha{
+#aloha{           
   width:200px;
   height:125px;
   padding:0 1em;
+  /*order:1;*/    
 }
 
 #cart{
   width:100px;
   height:80px;
-  padding-top:20px;
+  padding-top:30px;
+  /*order:2;*/
 }
 
 header img, header nav{
@@ -89,27 +90,33 @@ header img, header nav{
 }
 
 nav{
-  padding-top:20px;
-  /*padding-bottom:20px;*/
+  /*order:3;*/
+  padding:20px 0;
   margin-left:10px;
   margin-right:10px;
   border-top: 1px solid dimgrey;
+  width:100%;
 }
 
 
 nav ul{
   padding-left:0px;
   display:flex;
+  flex-wrap:wrap;
   justify-content:space-around;
   margin: 0;
+  list-style: none;
 }
 nav li {
-  display: inline;
-  color:#e2574c;
-  padding:0 1em;
+  padding:0 .5em;
   text-transform:uppercase;
-  font-size:24px;
+  font-size:14px;
   font-weight:bold;
+}
+
+nav a{
+  text-decoration:none;
+  color:#e2574c;
 }
 
 /*--------------------------herobanner----------------------------*/
@@ -120,33 +127,34 @@ nav li {
 }
 
 .herobanner{
-  background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), 
-  url(../images/banner-girl.png),
-  url(../images/flower-bkgd.jpg);
-  background-size:auto,30%,cover;
-  background-position:bottom;
-  background-repeat:no-repeat;
-  background-attachment:scroll;
-  height:700px;
+  background:
+    linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), 
+    url(../images/banner-girl.png) bottom/8.5rem no-repeat ,
+    url(../images/flower-bkgd.jpg) bottom/cover;
+  height:400px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction:column;
 }
 
 .herobanner h6,h2{
   font-family:'PlayfairDisplay',serif;
   color:#FFFAF0;
-  position:relative;
-  Top:250px;
+  text-align: center;
 }
 
 h6{
-  font-size:24px;
+  font-size:1.25rem;
   text-transform:uppercase;
-  margin-top:40px;
-  margin-bottom:40px;
+  margin-top:0;
+  margin-bottom:0.75rem;
 }
 
 h2{
-  font-size:56px;
+  margin:0;
+  font-size:2.25rem;
 }
 
 /*------------------------About Aloha--------------------------*/
@@ -158,15 +166,15 @@ h2{
 .handicap h1{
   font-family:'PlayfairDisplay',serif;
   font-weight:normal;
-  font-size:60px;
-  margin-bottom:50px;
-  margin-top:80px;
+  font-size:2.5rem;
+  margin-bottom:2.5rem;
+  margin-top:3.5rem;
 }
 
 .handicap p{
   font-family:'Raleway',sans-serif;
-  font-size:18px;
-  margin-bottom:100px;
+  font-size:1.25rem;
+  margin-bottom:3.5rem;
   line-height:2em;
 }
 
@@ -214,7 +222,7 @@ ul.choice{
   font-family:'PlayfairDisplay',serif;
   color:#FFFAF0;
   text-align:center;
-  font-size:32px;
+  font-size:2rem;
 }
 
 .trends{
@@ -235,7 +243,7 @@ ul.choice{
 .trends a{
   font-family:'PlayfairDisplay',serif;
   color:#FFFAF0;
-  font-size:32px;
+  font-size:2rem;
 }
 
 .glasses{
@@ -257,7 +265,7 @@ ul.choice{
   font-family:'PlayfairDisplay',serif;
   color:#FFFAF0;
   text-align:center;
-  font-size:32px;
+  font-size:2rem;
 }
 
 .sale{
@@ -279,7 +287,7 @@ ul.choice{
   font-family:'PlayfairDisplay',serif;
   color:#FFFAF0;
   text-align:center;
-  font-size:32px;
+  font-size:2rem;
 }
 
 .bags{
@@ -301,7 +309,7 @@ ul.choice{
   font-family:'PlayfairDisplay',serif;
   color:#FFFAF0;
   text-align:center;
-  font-size:32px;
+  font-size:2rem;
 }
 
 .women{
@@ -323,7 +331,7 @@ ul.choice{
   font-family:'PlayfairDisplay',serif;
   color:#FFFAF0;
   text-align:center;
-  font-size:32px;
+  font-size:2rem;
 }
 
 /*-------------------Most Loved Products---------------------*/
@@ -331,18 +339,34 @@ ul.choice{
 .selection h3{
   font-family:'PlayfairDisplay',serif;
   font-weight:normal;
-  font-size:60px;
+  font-size:2.5rem;
   text-align:center;
 }
 
 .selection h5{
   color:#e2574c;
+  text-align:center;
+  font-size:1.5rem;
+  font-weight:bold;
+  margin-top:1.75rem;
+  margin-bottom:1.75rem;
 }
 
 .selection p{
   text-transform:uppercase;
+  text-align:center;
+  font-size:0.75rem;
 }
 
+.carousel li{
+  list-style-type:none;
+}
+
+.gallery-cell{
+  /*width:80%;*/
+  height:30rem;
+
+}
 /*---------------Updates from the company------------------*/
 
 .update h3,.update p{
@@ -350,7 +374,15 @@ ul.choice{
 }
 
 .update h3{
-  padding-top:70px;
+  padding-top:2rem;
+  margin-bottom:1rem;
+  font-size:2rem;
+}
+
+.update p{
+  margin-top:1.5rem;
+  margin-bottom:1.5rem;
+  font-size:1rem;
 }
 
 .update{
@@ -362,6 +394,7 @@ ul.choice{
   height:300px;
   text-align: center;
 }
+
 
 /*------------------------footer--------------------------*/
 
@@ -376,26 +409,15 @@ ul.choice{
 }*/
 
 .info{
-  width:300px;
-  height:150px;
-  padding:30px 20px 20px 20px ;
-  position:relative;
-  left:250px;
+  width:20rem;
+  padding:2.5rem 1.5rem 1.5rem 1.5rem;
 }
 
 .socialmedia{
-  width:300px;
-  height:200px;
-  padding:0 50px 0 0;
-  position:relative;
-  left:250px;
+  width:20rem;
+  padding:0 3.5rem 0 3.5rem;
 }
 
-.socialmedia ul{
-  /*margin-top:50px;*/
-  margin-bottom:50px;
-  /*display:block;*/
-}
 
 .socialmedia li{
   display:inline-block;
@@ -415,9 +437,14 @@ footer{
 
 .info p,.info a{
   color:#FFFAF0;
+  margin-bottom:0.5rem;
+  margin-left:1.5rem;
+  text-align: center;
 }
 
 .address p{
   color:#696969;
+  margin-top:1rem;
+  padding-left:1.5rem;
 }
 

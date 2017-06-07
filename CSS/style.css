@@ -137,24 +137,25 @@ header{
   flex-wrap:wrap;
   justify-content:space-between;
   align-content:center;
+  padding: 0 2%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 #aloha{           
-  width:200px;
-  height:125px;
-  padding:0 1em;
+  max-width:120px;
+  height:47px;
 }
 
-#div-cart {
-  height:125px;
+/*#div-cart {
+  height:50px;
   display: flex;
   align-items: center;
-}
+}*/
 
 #cart{
-  display:flex;
-  justify-content: center;
-  align-items: center;
+  height: auto;
+  width: 50px;
 }
 
 
@@ -164,10 +165,10 @@ header img, header nav{
 
 
 nav{
-  padding:20px 0;
+  padding-top:.5rem;
   margin-left:10px;
   margin-right:10px;
-  border-top: 1px solid dimgrey;
+  border-top: 1px solid #d7d7d7;
   width:100%;
 }
 
@@ -184,7 +185,6 @@ nav li {
   padding:0 .5em;
   text-transform:uppercase;
   font-size:1rem;
-  font-weight:bold;
 }
 
 nav a{
@@ -194,10 +194,10 @@ nav a{
 
 /*--------------------------herobanner----------------------------*/
 
-.herobanner{
+.banner{
   background:
-    linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), 
-    url(../images/banner-girl.png) bottom/8.5rem no-repeat ,
+    linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.25)), 
+    url(../images/banner-girl.png) bottom/10rem no-repeat ,
     url(../images/flower-bkgd.jpg) bottom/cover;
   height:30rem;
   text-align: center;
@@ -205,6 +205,12 @@ nav a{
   justify-content: center;
   align-content: center;
   flex-direction:column;
+}
+
+.herobanner{
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 2%;
 }
 
 .herobanner h6,h2{
@@ -230,22 +236,25 @@ h2{
 
 .handicap{
   text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 720px;
 }
 
 .handicap h1{
   font-family:'playfair_display',serif;
   font-weight:normal;
-  font-size:2.5rem;
-  margin-bottom:2.5rem;
-  margin-top:3.5rem;
+  font-size:2.4rem;
+  margin-bottom:1.5rem;
+  margin-top:4rem;
 }
 
 .handicap p{
   font-family:'raleway',sans-serif;
   font-weight: normal;
-  font-size:1.25rem;
-  margin-bottom:3.5rem;
-  line-height:2em;
+  font-size:1.15rem;
+  margin-bottom:4rem;
+  line-height:1.25em;
 }
 
 .update h3{
@@ -275,6 +284,10 @@ h2{
   flex-wrap:wrap;
   justify-content:space-between; 
   padding-left:0;
+}
+
+.choice a:hover{
+  color: #b64036;
 }
 
 .men{

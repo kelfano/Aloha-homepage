@@ -656,15 +656,25 @@ header {
 
 nav{
   border-top:none;
-  width:40%;
+  width:60%;
+}
+
+nav li{
+  font-size: .9rem;
+}
+
+.herobanner h2{
+  font-size: 3rem;
 }
 
 .men, .women{
-  width:49%;
+  flex-basis:50%;
+  height: 150px;
 }
 
 .trends, .glasses, .sale, .bags{
-  width:25%;
+  flex-basis:25%;
+  height: 150px;
 }
 
 .container wrapper{
@@ -680,11 +690,10 @@ nav{
   justify-content: space-between;
 }
 
+.socialmedia{
+  padding-right:2%;
+}
 
-/*.socialmedia{
-  padding-left:20rem;
-  margin-left:15rem;
-}*/
 
 .socialmedia span{
   display:inline;
@@ -693,7 +702,10 @@ nav{
 .socialmedia ul{
   display:flex;
   flex-direction:column;
-  align-items: center;
+  align-items: flex-start;
+
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .socialmedia li{
@@ -701,6 +713,51 @@ nav{
 }
 .socialmedia a{
   color:#FFFAF0;
+}
+
+
+.update form{
+  width: 67%;
+  margin: 0 auto;
+}
+
+input[type="submit"]{
+  right: 1.6rem;
+}
+
+.container{
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.container.wrapper{
+  width: 100%;
+}
+
+.info{
+  padding:0 0 0 1rem;
+}
+
+
+.info p:nth-child(1){
+  color:#FFFAF0;
+  text-align: left;
+  margin:0;
+}
+
+.info p:nth-child(2){
+  color:#FFFAF0;
+  text-align: left;
+  margin:0;
+  margin-bottom: 1rem;
+}
+
+.info p:nth-child(3){
+  color:#FFFAF0;
+  text-align: left;
+  margin:0;
+  margin-bottom: 1rem;
 }
 
 

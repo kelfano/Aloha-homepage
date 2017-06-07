@@ -295,8 +295,8 @@ h2{
   background-repeat:no-repeat;
   background-size:cover;
   background-position:center;
-  height:300px;
-  width:100%;
+  height: 50vw;
+  width: 100vw;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -316,8 +316,8 @@ h2{
   background-size:cover;
   background-position:center;
   text-align:center;
-  height:300px;
-  width:49%;
+  height: 50vw;
+  width: 50vw;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -336,8 +336,8 @@ h2{
   background-size:cover;
   background-position:center;
   text-align:center;
-  height:300px;
-  width:49%;
+  height: 50vw;
+  width: 50vw;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -357,8 +357,8 @@ h2{
   background-size:cover;
   background-position:center;
   text-align:center;
-  height:300px;
-  width:49%;
+  height: 50vw;
+  width: 50vw;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -378,8 +378,8 @@ h2{
   background-size:cover;
   background-position:bottom;
   text-align:center;
-  height:300px;
-  width:49%;
+  height: 50vw;
+  width: 50vw;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -399,8 +399,8 @@ h2{
   background-size:cover;
   background-position:top;
   text-align:center;
-  height:300px;
-  width:100%;
+  height: 50vw;
+  width: 100vw;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -528,6 +528,10 @@ input[type="submit"]{
   display:inline-block;
 }
 
+.socialmedia a{
+  text-decoration: none;
+}
+
 .socialmedia i{
   color:#FFFAF0;
   min-width: 25px;
@@ -579,70 +583,6 @@ footer{
 
 }
 
-/*--------------------Desktop Version-------------------------*/
-@media screen and (min-width:1240px){
-
-header {
-  align-items:center;
-}
-
-#div-cart{
-  order:2;
-  
-}
-
-nav{
-  border-top:none;
-  width:50%;
-}
-
-.men, .women{
-  width:49%;
-}
-
-.trends, .glasses, .sale, .bags{
-  width:25%;
-}
-
-.container wrapper{
-  visibility:hidden; 
-  display:flex;
-  flex-direction:column;
-  flex-wrap:wrap;
-}
-
-.container {
-  display:flex;
-  align-items:center;
-  justify-content: space-between;
-}
-
-
-.socialmedia{
-  padding-left:20rem;
-  margin-left:15rem;
-}
-
-.socialmedia span{
-  display:inline;
-}
-
-.socialmedia ul{
-  display:flex;
-  flex-direction:column;
-  align-items: center;
-}
-
-.socialmedia li{
-  margin-bottom: 1rem;
-}
-.socialmedia a{
-  color:#FFFAF0;
-}
-
-
-}
-
 /*--------------------Tablet Version-------------------------*/
 @media screen and (min-width:600px){
 
@@ -669,12 +609,14 @@ nav li{
 
 .men, .women{
   flex-basis:50%;
-  height: 150px;
+  height: 30vw;
+  width: 100vw;
 }
 
 .trends, .glasses, .sale, .bags{
   flex-basis:25%;
-  height: 150px;
+  height: 30vw;
+  width: 50vw;
 }
 
 .container wrapper{
@@ -694,11 +636,6 @@ nav li{
   padding-right:2%;
 }
 
-
-.socialmedia span{
-  display:inline;
-}
-
 .socialmedia ul{
   display:flex;
   flex-direction:column;
@@ -711,8 +648,14 @@ nav li{
 .socialmedia li{
   margin-bottom: 1rem;
 }
+
 .socialmedia a{
   color:#FFFAF0;
+  text-decoration: none;
+}
+
+.socialmedia span{
+  display:inline;
 }
 
 
@@ -758,6 +701,118 @@ input[type="submit"]{
   text-align: left;
   margin:0;
   margin-bottom: 1rem;
+}
+
+.address p:nth-child(1){
+  color:#969696;
+  margin-top:1rem;
+  margin-bottom:0;
+}
+
+.address p:nth-child(2){
+  color:#969696;
+  margin:0;
+
+}
+
+
+}
+
+
+/*--------------------Desktop Version-------------------------*/
+@media screen and (min-width:1240px){
+
+header {
+  align-items:center;
+}
+
+#aloha{
+  max-width: 160px;
+  height: 62px;
+}
+
+#div-cart{
+  order:2;
+}
+
+#cart{
+  height: auto;
+  width: 62px;
+}
+
+nav{
+  border-top:none;
+  width:40%;
+  margin: 0 auto;
+}
+
+nav li{
+  font-size: 1rem;
+}
+
+.banner{
+  height: 550px;
+  background-size: cover,250px 500px,contain;
+}
+
+.herobanner h2{
+  font-size: 4rem;
+}
+
+.men, .women{
+  width:49%;
+}
+
+.trends, .glasses, .sale, .bags{
+  width:25%;
+}
+
+.container wrapper{
+  visibility:hidden; 
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+}
+
+.container {
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+}
+
+
+.socialmedia{
+  padding-right: 4rem;
+}
+
+.socialmedia span{
+  display:inline;
+}
+
+.socialmedia ul{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.socialmedia li{
+  margin-bottom: 1rem;
+}
+.socialmedia a{
+  color:#FFFAF0;
+  text-decoration: none;
+}
+
+.address p:nth-child(1){
+  color:#969696;
+  margin-top:1rem;
+  margin-bottom:0;
+}
+
+.address p:nth-child(2){
+  color:#969696;
+  margin:0;
+
 }
 
 

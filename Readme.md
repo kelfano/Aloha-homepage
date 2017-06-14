@@ -1,18 +1,18 @@
 # Aloha Project (Objectives)
 It is a single homepage created for our client "Aloha". Using HTML and CSS to create a layout for the structure and styling. Javascipt is used to make the project more engaging as well as enhancing the user experience by providing smooth scrolling to serach for paritcular section, form submit etc
 
-##Technology used in the project
+## Technology used in the project
 
--HTML
--HTML forms
--CSS
--Javascript
--jQuery (Javascript library)
--Flexbox
--Responsive design (including mobile,tablet & desktop version)
--Commanding line and gitbash
--git and github (i.e. local and remote repositories)
--open sources
+- HTML
+- HTML forms
+- CSS
+- Javascript
+- jQuery (Javascript library)
+- Flexbox
+- Responsive design (including mobile,tablet & desktop version)
+- Commanding line and gitbash
+- git and github (i.e. local and remote repositories)
+- open sources
   - font types (i.e. font Squirrel, font awesome)
   - flickity (for creating a image slider)
 
